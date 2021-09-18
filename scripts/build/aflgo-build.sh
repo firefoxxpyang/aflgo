@@ -63,7 +63,8 @@ export LC_ALL=C
 apt-get update
 apt install -y python-dev python3 python3-dev python3-pip autoconf automake libtool-bin python-bs4 libboost-all-dev # libclang-11.0-dev
 python3 -m pip install --upgrade pip
-python3 -m pip install networkx pydot pydotplus
+python3 -m pip install networkx==2.4
+python3 -m pip install pydot pydotplus
 
 export CXX=clang++
 export CC=clang
