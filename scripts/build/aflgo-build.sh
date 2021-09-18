@@ -9,10 +9,10 @@ UBUNTU_VERSION=`cat /etc/os-release | grep VERSION_ID | cut -d= -f 2`
 UBUNTU_YEAR=`echo $UBUNTU_VERSION | cut -d. -f 1`
 UBUNTU_MONTH=`echo $UBUNTU_VERSION | cut -d. -f 2`
 
-if [[ "$UBUNTU_YEAR" > "16" || "$UBUNTU_MONTH" > "04" ]]
-then
-    apt-get install -y python3-distutils
-fi
+#if [[ "$UBUNTU_YEAR" > "16" || "$UBUNTU_MONTH" > "04" ]]
+#then
+#    apt-get install -y python3-distutils
+#fi
 
 export CXX=g++
 export CC=gcc
